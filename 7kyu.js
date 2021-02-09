@@ -115,3 +115,10 @@ function getCount(str) {
 
   return vowelsCount;
 }
+
+
+// Transform an array into a string
+function transform(array) {
+  let newArr = arr.map(x => x === null? 'null' : x)
+  return newArr.toString().split(',').join('')
+}
