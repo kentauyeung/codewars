@@ -262,3 +262,24 @@ const flip=(d, arr)=>{
 function multiply(a, b){
   return a * b;
 }
+
+// Find Maximum and Minimum Values of a List
+let min = function(list){
+  let current = list[0]
+  for(let i=0; i<list.length; i++){
+    if(list[i] < current) {
+      current = list[i]
+    }
+  }
+  return current
+}
+
+let max = function(list){
+  let current = list[0]
+  for(let i=0; i<list.length; i++){
+    if(list[i] > current) {
+      current = list[i]
+    }
+  }
+    return current;
+}
