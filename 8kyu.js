@@ -283,3 +283,19 @@ let max = function(list){
   }
     return current;
 }
+
+// The Feast of Many Beasts
+function feast(beast, dish) {
+  return beast[0] === dish[0] && beast[beast.length-1] === dish[dish.length-1]
+}
+
+
+// Convert a Number to a String!
+function numberToString(num) {
+  return num.toString()
+}
+
+// Grasshopper - Personalized Message
+function greet (name, owner) {
+  return name === owner ? "Hello boss" : "Hello guest"
+}
