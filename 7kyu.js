@@ -122,3 +122,8 @@ function transform(array) {
   let newArr = arr.map(x => x === null? 'null' : x)
   return newArr.toString().split(',').join('')
 }
+
+// No oddities here
+function noOdds( values ){
+  return values.filter(x => x % 2 === 0)
+}
