@@ -299,3 +299,32 @@ function numberToString(num) {
 function greet (name, owner) {
   return name === owner ? "Hello boss" : "Hello guest"
 }
+
+// Stringy Strings
+function stringy(size) {
+  let onesAndZeros = '1'
+  for( let i = 0; i < size-1; i++) {
+    if(onesAndZeros.length % 2 !== 0) {
+      onesAndZeros += '0'
+    }  else {
+      onesAndZeros += '1'
+    }
+  }
+  return onesAndZeros
+}
+
+// Regular Ball Super Ball
+let Ball = function(ballType) {
+  this.ballType = ballType || 'regular'
+};
+
+// A wolf in sheep's clothing
+function warnTheSheep(queue) {
+  let inDanger = (queue.length - 1) - queue.indexOf("wolf")
+  
+  if(queue.length - 1 === queue.indexOf("wolf")){
+    return "Pls go away and stop eating my sheep"
+  }  else {
+    return "Oi! Sheep number " + inDanger + "! You are about to be eaten by a wolf!"
+  }
+}
