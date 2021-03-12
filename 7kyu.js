@@ -145,3 +145,24 @@ function overTheRoad(address, n){
     oddAddresses[evenAddresses.indexOf(address)] :
     evenAddresses[oddAddresses.indexOf(address)]
 }
+
+// Even or Odd - Which is Greater?
+function evenOrOdd(str) {
+  str = str.split('')
+  let even = 0
+  let odd = 0
+  str.forEach(num => {
+    if(num % 2 === 0){ 
+      even += Number(num)
+    } else {  
+      odd += Number(num)
+    }
+  })
+  if(even < odd){
+    return 'Odd is greater than Even'
+  } else if(odd < even) {
+    return 'Even is greater than Odd'
+  } else {
+    return 'Even and Odd are the same'
+  }
+}
