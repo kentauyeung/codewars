@@ -127,3 +127,21 @@ function transform(array) {
 function noOdds( values ){
   return values.filter(x => x % 2 === 0)
 }
+
+// Over The Road
+function overTheRoad(address, n){
+  let evenAddresses = []
+  let oddAddresses = []
+  
+  for( i = 1; i <= n*2; i++ ){
+    if( i % 2 === 0 ) {
+      evenAddresses.unshift(i) // add to end of array
+    } else {
+      oddAddresses.push(i) // add to beginning of array
+    }
+  }
+    
+  return address % 2 === 0 ?
+    oddAddresses[evenAddresses.indexOf(address)] :
+    evenAddresses[oddAddresses.indexOf(address)]
+}
