@@ -166,3 +166,21 @@ function evenOrOdd(str) {
     return 'Even and Odd are the same'
   }
 }
+
+// Billiards Pyramid
+function pyramid(balls) {
+  let total = 0
+  let count = 0
+  if(balls === 1) {
+    return 1
+  }
+  for(i=1; i<balls; i++){
+    total += i
+    count += 1
+    if(total === balls) {
+     return count 
+    } else if (total > balls) {
+      return count - 1
+    }
+  }
+}
