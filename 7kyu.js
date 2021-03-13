@@ -184,3 +184,17 @@ function pyramid(balls) {
     }
   }
 }
+
+// Sum - Square Event, Root Odd 
+const sumSquareEvenRootOdd = ns => {
+  let total = 0
+  for (let i=0; i<ns.length; i++){
+    let num = ns[i]
+    if(num % 2 === 0){
+      total += Math.pow(num, 2)
+    } else {
+      total += Math.sqrt(num)
+    }
+  }
+  return Number(total.toFixed(2))
+};
