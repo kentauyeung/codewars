@@ -198,3 +198,23 @@ const sumSquareEvenRootOdd = ns => {
   }
   return Number(total.toFixed(2))
 };
+
+// Next Prime 
+let nextPrime = n => {
+  let prime = n + 1
+  if(n <= 1) {
+    return 2
+  }
+  while(!isPrime(prime)) {
+    prime ++
+  }
+  
+  return prime
+}
+
+const isPrime = num => {
+  for(let i = 2; i < num; i++) {
+    if(num % i === 0) return false
+  }
+  return num > 1
+}
