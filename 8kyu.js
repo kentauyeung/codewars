@@ -328,3 +328,27 @@ function warnTheSheep(queue) {
     return "Oi! Sheep number " + inDanger + "! You are about to be eaten by a wolf!"
   }
 }
+
+// Sum Mixed Array 
+function sumMix(x){
+  return x.reduce((a, c) => a + Number(c),0)
+}
+
+// Squash the bugs 
+function findLongest(str){
+  
+  let wordsArr = str.split(" ")
+  let longestWord = 0
+  
+  for (let i = 0; i < wordsArr.length; i++) {
+    if (wordsArr[i].length > longestWord) {
+      longestWord = wordsArr[i].length
+    }
+  }
+  return longestWord
+}
+
+The most asked question on CodeWars
+function detect(string){
+  return string.slice(0,19).includes('Can someone explain')
+}
