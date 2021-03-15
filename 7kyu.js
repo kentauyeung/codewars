@@ -228,3 +228,30 @@ const pigLatin = phrase => {
   let newPhrase = changedPhrase.join('') // back to string
   return newPhrase.toLowerCase()
 }
+
+// Holiday II - Place Seating 
+function planeSeat(a){
+  let numberSec = a.replace(/\D+/g, '') 
+  let letterSec = a.split('').pop()
+  
+  if(numberSec <= 20 && (letterSec === 'A' || letterSec === 'B' || letterSec === 'C')){
+    return 'Front-Left'
+  } else if(numberSec <= 20 && (letterSec === 'D' || letterSec === 'E' || letterSec === 'F')){
+    return 'Front-Middle'
+  } else if(numberSec <= 20 && (letterSec === 'G' || letterSec === 'H' || letterSec === 'K')){
+    return 'Front-Right'
+  } else if(numberSec <= 40 && (letterSec === 'A' || letterSec === 'B' || letterSec === 'C')){
+    return 'Middle-Left'
+  } else if(numberSec <=40 && (letterSec === 'D' || letterSec === 'E' || letterSec === 'F')){
+    return 'Middle-Middle'
+  } else if(numberSec <= 40 && (letterSec === 'G' || letterSec === 'H' || letterSec === 'K')){
+    return 'Middle-Right'
+  } else if(numberSec <=60 && (letterSec === 'A' || letterSec === 'B' || letterSec === 'C')){
+    return 'Back-Left'
+  } else if(numberSec <=60 && (letterSec === 'D' || letterSec === 'E' || letterSec === 'F')){
+    return 'Back-Middle'
+  } else if(numberSec <=60 && (letterSec === 'G' || letterSec === 'H' || letterSec === 'K')){
+    return 'Back-Right'
+  } else {
+    return 'No Seat!!'
+  }
