@@ -114,3 +114,16 @@ function isPrime(num) {
 
   return true;
 }
+
+// Sums of Parts 
+const partsSums = ls => {
+  ls = ls.reverse() // [10, 6, 3, 1 ,0]
+  let sum = 0
+  let newArr = [0]
+  
+  for(let i = 0; i < ls.length; i++){
+   sum += ls[i] // 10, 16, 19, 20, 20
+      newArr.unshift(sum) [20, 20, 19, 16, 10, 0]
+  }
+  return newArr
+}

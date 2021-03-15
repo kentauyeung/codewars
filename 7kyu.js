@@ -218,3 +218,13 @@ const isPrime = num => {
   }
   return num > 1
 }
+
+// Pig Latin Converter 
+const pigLatin = phrase => {
+  phrase = phrase.split(' ') // string into array of words
+  let phraseArr = phrase.map(word => word.split('')) // take each word and makes it an array of letters
+  phraseArr.forEach(letter => letter.push(letter.shift())) // moves first letter in phraseArr to the back
+  let changedPhrase = phraseArr.map(word = > word.join('') + 'ay') // array of letters becomes array of words with 'ay'
+  let newPhrase = changedPhrase.join('') // back to string
+  return newPhrase.toLowerCase()
+}
