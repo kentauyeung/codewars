@@ -372,3 +372,28 @@ function mergeArrays(arr1, arr2) {
   arr2.forEach(n => {if(arr1.indexOf(n) < 0) arr1.push(n)})
   return arr1.sort( (a,b) => a - b)
 }
+
+// You Can't Code Under Pressure #1 
+function doubleInteger(i) {
+  return i*2;
+}
+
+// Convert boolean values to strings 'Yes' or "No"
+function boolToWord( bool ){
+  return bool ? "Yes" : "No"
+}
+
+// Beginner Series #4 Cockroach
+function cockroachSpeed(s) {
+  return Math.floor(s * 27.7778)
+}
+
+// opposites Attract
+function lovefunc(flower1, flower2){
+  return (flower1 % 2 !== 0 && flower2 % 2 === 0) || (flower1 % 2 === 0 && flower2 % 2 !== 0)
+}
+
+// Grasshopper - Terminal game move function 
+function move (position, roll) {
+  return position + (2 * roll)
+}
