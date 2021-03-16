@@ -366,3 +366,9 @@ function repeatStr (n, s) {
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   return Math.abs(dadYearsOld - (sonYearsOld * 2))
 }
+
+// Merge two sorted arrays into one 
+function mergeArrays(arr1, arr2) {
+  arr2.forEach(n => {if(arr1.indexOf(n) < 0) arr1.push(n)})
+  return arr1.sort( (a,b) => a - b)
+}
