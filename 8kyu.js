@@ -352,3 +352,12 @@ The most asked question on CodeWars
 function detect(string){
   return string.slice(0,19).includes('Can someone explain')
 }
+
+// String repeat 
+function repeatStr (n, s) {
+  let repeated = ''
+  for(let i = 0; i < n; i++){
+    repeated += s
+  }
+  return repeated
+}
