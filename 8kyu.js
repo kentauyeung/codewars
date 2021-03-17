@@ -397,3 +397,8 @@ function lovefunc(flower1, flower2){
 function move (position, roll) {
   return position + (2 * roll)
 }
+
+// Miles per gallon to kilometers per liter 
+function converter (mpg) {
+  return Number((mpg * .3540060435382138).toFixed(2))
+}
