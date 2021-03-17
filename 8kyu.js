@@ -8,6 +8,11 @@ function hero(bullets, dragons){
   return bullets >= dragons * 2
 }
 
+// Function 1 - hello world
+let greet = () => {
+  return 'hello world!'
+}
+
 // Reversed Strings
 function solution(str){
   return str.split('').reverse().join('')
@@ -406,4 +411,13 @@ function converter (mpg) {
 // Reversed Words 
 let reverseWords = str => {
   return str = str.split(' ').reverse().join(' ')
+}
+
+// Grasshopper - summation 
+let summation = num => {
+  let sum = 0
+  for( let i = 1; i <= num; i++){
+    sum += i
+  }
+  return sum
 }
