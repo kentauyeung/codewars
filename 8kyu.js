@@ -402,3 +402,8 @@ function move (position, roll) {
 function converter (mpg) {
   return Number((mpg * .3540060435382138).toFixed(2))
 }
+
+// Reversed Words 
+let reverseWords = str => {
+  return str = str.split(' ').reverse().join(' ')
+}
