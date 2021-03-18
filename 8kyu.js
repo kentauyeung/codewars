@@ -437,3 +437,8 @@ function uefaEuro2016(teams, scores){
 function makeUpperCase(str) {
   return str.toUpperCase()
 }
+
+// Beginner - Reduce but Grow 
+const grow = x => {
+  return x.reduce( (a, c) => a * c, 1)
+}
