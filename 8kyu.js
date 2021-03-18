@@ -442,3 +442,9 @@ function makeUpperCase(str) {
 const grow = x => {
   return x.reduce( (a, c) => a * c, 1)
 }
+
+// Beginner - Lost Without a Map 
+let maps = x => {
+  let newArr = x.map( num => num * 2)
+  return newArr
+}
