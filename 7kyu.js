@@ -255,3 +255,13 @@ function planeSeat(a){
   } else {
     return 'No Seat!!'
   }
+
+  // Strange mathematics 
+  function strangeMath(n, k){
+    let nArr = []
+    for(let i = 1; i <= n; i++ ) {
+      nArr.push(i)
+    }
+    nArr.sort()
+    return nArr.indexOf(k) + 1
+  }
