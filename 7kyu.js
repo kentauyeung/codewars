@@ -346,3 +346,8 @@ function inverseSlice(items, a, b) {
   let removeThese = items.slice(a,b)
   return items.filter( e => !removeThese.includes(e))
 }
+
+// Holiday III - Fire on the boat 
+function fireFight(s){
+  return s.split('Fire').join('~~')
+}
