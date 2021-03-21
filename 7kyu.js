@@ -277,3 +277,66 @@ function planeSeat(a){
     }
     return total
   }
+
+  // It is written in the stars 
+  function starSign(date) {
+    date = getMonth(date) + getDay(date)
+  
+    if( date >= 121 && date <= 219 ) {
+      return 'Aquarius'
+    } else if ( date >= 220 && date <= 320 ) {
+      return 'Pisces'
+    } else if ( date >= 321 && date <= 420 ) {
+      return 'Aries'
+    } else if ( date >= 421 && date <= 521 ) {
+      return 'Taurus'
+    } else if ( date >= 522 && date <= 621) {
+      return 'Gemini'
+    } else if ( date >= 622 && date <= 722 ) {
+      return 'Cancer'
+    } else if ( date >= 723 && date <= 823 ) {
+      return 'Leo'
+    } else if ( date >= 824 && date <= 923 ) {
+      return 'Virgo'
+    } else if ( date >= 924 && date <= 1023 ) {
+      return 'Libra'
+    } else if ( date >= 1024 && date <= 1122 ) {
+      return 'Scorpio'
+    } else if ( date >= 1123 && date <= 1221 ) {
+      return 'Sagittarius'
+    } else {
+      return 'Capricorn'
+    }
+  }
+  
+  let getMonth = obj => {
+    let str = obj.toString().slice(4,7)
+    if( str === 'Jan' ) {
+      return '1'
+    } else if ( str === 'Feb' ) {
+      return '2'
+    } else if ( str === 'Mar' ) {
+      return '3'
+    } else if ( str === 'Apr' ) {
+      return '4'
+    } else if ( str === 'May' ) {
+      return '5'
+    } else if ( str === 'Jun' ) {
+      return '6'
+    } else if (str === 'Jul' ) {
+      return '7'
+    } else if ( str === 'Aug' ) {
+      return '8'
+    } else if ( str === 'Sep' ) {
+      return '9'
+    } else if ( str === 'Oct' ) {
+      return '10'
+    } else if ( str === 'Nov' ) {
+      return '11'
+    } else if ( str === 'Dec' ) {
+      return '12'
+    }
+  }
+  
+  let getDay = obj => {
+    return obj.toString().slice(8,10)
