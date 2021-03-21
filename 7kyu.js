@@ -340,3 +340,9 @@ function planeSeat(a){
   
   let getDay = obj => {
     return obj.toString().slice(8,10)
+
+// Thinkful - List and Loop Drills: Inverse Slicer 
+function inverseSlice(items, a, b) {
+  let removeThese = items.slice(a,b)
+  return items.filter( e => !removeThese.includes(e))
+}
