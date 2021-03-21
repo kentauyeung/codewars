@@ -351,3 +351,27 @@ function inverseSlice(items, a, b) {
 function fireFight(s){
   return s.split('Fire').join('~~')
 }
+
+// Birthday II - Presents 
+function present(x, y){
+  console.log( x, y )
+  if ( x === 'goodpresent' ) {
+    // return x with num of passes added to each charCode (turn to charCode, add y to each, turn back)
+    let xArr = x.split('')
+    let charCodeArr = xArr.map( e => e.charCodeAt() + y )
+    let strFromCharCode = charCodeArr.map( e => String.fromCharCode(e) )
+    return strFromCharCode.join('')
+  } else if ( x === 'crap' || x === 'empty' ) {
+    // return string sorted alphabetically
+    return x.split('').sort().join('')
+  } else if ( x === 'bang' ) {
+    // return string turned to char codes, each code reduced by number of passes and summed to a single figure
+    let xArr = x.split('')
+    let charCodeArr = xArr.map( e => e.charCodeAt() - y )
+    return charCodeArr.reduce( (a,c) => a + c, 0 )
+  } else if ( x === 'badpresent' ) {
+    return 'Take this back!'
+  } else if ( x === 'dog' ) {
+    return `pass out from excitement ${y} times`
+  } 
+}
