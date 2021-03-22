@@ -375,3 +375,21 @@ function present(x, y){
     return `pass out from excitement ${y} times`
   } 
 }
+
+// Coding Meetup #5 - Higher-Order Functions Series - Prepare the count of languages 
+function countLanguages(list) {
+  let langObj = {}
+  for ( let i = 0; i < list.length; i++ ) { // list[i] is an object that we'll rename to 'user'
+    let user = list[i]
+    for ( let key in user ) {
+      if( key === 'language') {
+        if ( langObj[user[key]] === undefined ) {
+          langObj[user[key]] = 1
+        } else {
+          langObj[user[key]] += 1
+        }
+      }
+    }
+  }
+  return langObj
+}
