@@ -393,3 +393,37 @@ function countLanguages(list) {
   }
   return langObj
 }
+
+// Slaphead 
+function bald(x){
+  let count = x.split('').filter( e => e === '/')
+  let shaved = shave(x)
+  return [shaved, hairCount(count.length)]
+}
+
+let hairCount = num => {
+  if(num < 1) {
+    return 'Clean!'
+  } else if (num < 2) {
+    return 'Unicorn!'
+  } else if (num < 3) {
+    return "Homer!"
+  } else if (num < 6) {
+    return 'Careless!'
+  } else {
+    return 'Hobo!'
+  }
+}
+
+let shave = str => {
+  str.split('')
+  let newArr = []
+  for ( let i =0; i< str.length; i++) {
+    if (str[i] === '/') {
+      newArr.push('-')
+    } else {
+      newArr.push(str[i])
+    }    
+  }
+  return newArr.join('')
+}
