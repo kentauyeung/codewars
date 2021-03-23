@@ -427,3 +427,8 @@ let shave = str => {
   }
   return newArr.join('')
 }
+
+// Samll enough? -Beginner 
+function smallEnough(a, limit){
+  return a.every( x => x <= limit)
+}
