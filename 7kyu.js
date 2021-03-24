@@ -456,3 +456,16 @@ function olympicRing(a){
     return "Gold!"
   }
 }
+
+// Stones on the Table 
+function solve(stones) {
+  let moves = 0
+  let stonesArr = stones.split('')
+  
+  for (let i = 0; i < stonesArr.length; i++) {
+    if( stonesArr[i] === stonesArr[i + 1] ) {
+      moves++
+    }
+  }
+  return moves
+}
