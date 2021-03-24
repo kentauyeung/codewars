@@ -469,3 +469,18 @@ function solve(stones) {
   }
   return moves
 }
+
+// Coding Meetup#11 - Higher-Order Functions Series - Find the average age 
+function getAverageAge(list) {
+  let totalAge = 0
+  
+  for ( let i = 0; i < list.length; i ++ ) {
+    for ( key in list[i] ) {
+      if ( key === 'age' ) {
+        totalAge += list[i][key]      
+      }
+    }
+  }
+  
+  return Math.round( totalAge / list.length)
+}
