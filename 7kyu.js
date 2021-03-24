@@ -432,3 +432,27 @@ let shave = str => {
 function smallEnough(a, limit){
   return a.every( x => x <= limit)
 }
+
+// Olympic Rings 
+function olympicRing(a){
+  let onePointArr = ['a','b','d','e','g','o','p','q','A','D','O','P','Q','R'] 
+  let total = 0
+  
+  a = a.split('')
+  a.forEach(letter => {
+              if(onePointArr.includes(letter)) total += 1
+              if(letter === 'B') total += 2
+            })
+  
+  let result = Math.floor( total / 2 )
+
+  if( result <= 1) {
+    return "Not even a medal!"
+  } else if ( result === 2 ) {
+    return "Bronze!"
+  } else if ( result === 3 ) {
+    return "Silver!"
+  } else {
+    return "Gold!"
+  }
+}
