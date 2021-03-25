@@ -544,3 +544,19 @@ function isRubyComing(list) {
   }
   return count > 0
 }
+
+// Paul's Misery 
+function paul(x){
+  let activities = {
+    'life' : 0 ,
+    'eating' : 1 ,
+    'kata' : 5 ,
+    'Petes kata' : 10,
+  }
+  
+  let total = x.reduce( (acc, cur) => acc + activities[cur], 0)
+  return total < 40 ? 'Super happy!' 
+        : total < 70 ? 'Happy!'
+        : total < 100 ? 'Sad!'
+        : 'Miserable!'
+}
