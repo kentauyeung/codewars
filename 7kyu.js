@@ -531,3 +531,16 @@ let isNum = (obj, x) => {
     return obj[key] === x
   }
 }
+
+// Coding Meetup #3 - Higher-Order Functions Series - Is Ruby coming? 
+function isRubyComing(list) {
+  let count = 0
+  for( let i = 0; i < list.length; i++ ) {
+    for ( let key in list[i] ) {
+      if ( list[i][key] === 'Ruby' ) {
+        count ++
+      }
+    }
+  }
+  return count > 0
+}
