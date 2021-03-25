@@ -484,3 +484,50 @@ function getAverageAge(list) {
   
   return Math.round( totalAge / list.length)
 }
+
+// Write out expression! 
+function expressionOut(expr) {
+  let expressionObj = {
+    '+' : 'Plus' ,
+    '-' : 'Minus' ,
+    '*' : 'Times' ,
+    '/' : 'Divided By' ,
+    '**' : 'To The Power Of' ,
+    '=' : 'Equals' ,
+    '!=' : 'Does Not Equal' ,
+    '1' : 'One' ,
+    '2' : 'Two' ,
+    '3' : 'Three' ,
+    '4' : 'Four' ,
+    '5' : 'Five' ,
+    '6' : 'Six' ,
+    '7' : 'Seven' ,
+    '8' : 'Eight' ,
+    '9' : 'Nine' ,
+    '10' : 'Ten' ,
+  }
+  let expressionNum = {
+    '1' : 'One' ,
+    '2' : 'Two' ,
+    '3' : 'Three' ,
+    '4' : 'Four' ,
+    '5' : 'Five' ,
+    '6' : 'Six' ,
+    '7' : 'Seven' ,
+    '8' : 'Eight' ,
+    '9' : 'Nine' ,
+    '10' : 'Ten'
+  }
+  let expressionWritten = expr.split(' ').map( e => expressionObj[e])
+  if(expressionWritten.includes(undefined) || isNum(expressionNum, expressionWritten[1]) ){
+    return "That's not an operator!"
+  }  else {
+    return expressionWritten.join(' ')
+  }
+}
+
+let isNum = (obj, x) => {
+  for ( let key in obj ) {
+    return obj[key] === x
+  }
+}
