@@ -560,3 +560,8 @@ function paul(x){
         : total < 100 ? 'Sad!'
         : 'Miserable!'
 }
+
+// Simple Fun #176: Reverse Letter 
+function reverseLetter(str) {
+  return str.replace(/[^a-z]/gi, '').split('').reverse().join('')
+}
