@@ -585,3 +585,12 @@ function heron(a, b, c) {
   let s = ( a + b + c) / 2
   return Math.sqrt(s * ( s - a ) * ( s - b ) * ( s - c ) ) 
 }
+
+// Sum of Cubes 
+function sumCubes(n){
+  let nArr = []
+  for ( let i = n ; i >= 1; i -- ) {
+    nArr.push(i)
+  }
+  return nArr.reduce( ( a, c ) => a + Math.pow(c, 3), 0 ) 
+}
