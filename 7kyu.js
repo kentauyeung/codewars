@@ -565,3 +565,12 @@ function paul(x){
 function reverseLetter(str) {
   return str.replace(/[^a-z]/gi, '').split('').reverse().join('')
 }
+
+// Move all vowels 
+function moveVowel(input) {
+  let vowels = ['a', 'e', 'i', 'o', 'u']
+  input = input.split('')
+  let notVowels = input.filter(x => !vowels.includes(x))
+  let areVowels = input.filter(x => vowels.includes(x))
+  return notVowels.join('') + areVowels.join('')
+}
