@@ -579,3 +579,9 @@ function moveVowel(input) {
 function numOfOpenLockers(n){
   return Math.floor(Math.sqrt(n))
 }
+
+// Heron's formula 
+function heron(a, b, c) {
+  let s = ( a + b + c) / 2
+  return Math.sqrt(s * ( s - a ) * ( s - b ) * ( s - c ) ) 
+}
