@@ -574,3 +574,8 @@ function moveVowel(input) {
   let areVowels = input.filter(x => vowels.includes(x))
   return notVowels.join('') + areVowels.join('')
 }
+
+// Strange principal 
+function numOfOpenLockers(n){
+  return Math.floor(Math.sqrt(n))
+}
