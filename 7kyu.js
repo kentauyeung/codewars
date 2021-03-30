@@ -594,3 +594,15 @@ function sumCubes(n){
   }
   return nArr.reduce( ( a, c ) => a + Math.pow(c, 3), 0 ) 
 }
+
+// Printer Errors 
+function printerError(s) {
+  let lettersAToM = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm']
+  let errors = 0
+  s.split('').forEach(x => {
+    if(!lettersAToM.includes(x)){
+      errors ++ 
+    }
+  })
+  return `${errors}/${s.length}`
+}
