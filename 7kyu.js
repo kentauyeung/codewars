@@ -224,7 +224,7 @@ const pigLatin = phrase => {
   phrase = phrase.split(' ') // string into array of words
   let phraseArr = phrase.map(word => word.split('')) // take each word and makes it an array of letters
   phraseArr.forEach(letter => letter.push(letter.shift())) // moves first letter in phraseArr to the back
-  let changedPhrase = phraseArr.map(word = > word.join('') + 'ay') // array of letters becomes array of words with 'ay'
+  let changedPhrase = phraseArr.map(word => word.join('') + 'ay') // array of letters becomes array of words with 'ay'
   let newPhrase = changedPhrase.join('') // back to string
   return newPhrase.toLowerCase()
 }
@@ -255,6 +255,7 @@ function planeSeat(a){
   } else {
     return 'No Seat!!'
   }
+}
 
   // Strange mathematics 
   function strangeMath(n, k){
@@ -340,6 +341,7 @@ function planeSeat(a){
   
   let getDay = obj => {
     return obj.toString().slice(8,10)
+  }
 
 // Thinkful - List and Loop Drills: Inverse Slicer 
 function inverseSlice(items, a, b) {
@@ -605,4 +607,21 @@ function printerError(s) {
     }
   })
   return `${errors}/${s.length}`
+}
+
+// Complementary DNA 
+function DNAStrand(dna){
+  let dnaArr = dna.split('')
+  for( let i = 0; i < dnaArr.length; i ++ ) {
+    if( dnaArr[i] === "A" ) {
+      dnaArr[i] = "T"
+    } else if ( dnaArr[i] === "T" ) {
+      dnaArr[i] = "A"
+    } else if ( dnaArr[i] === "C" ) {
+      dnaArr[i] = "G"
+    } else if ( dnaArr[i] === "G") {
+      dnaArr[i] = "C"
+    }
+  }
+  return dnaArr.join('')
 }
