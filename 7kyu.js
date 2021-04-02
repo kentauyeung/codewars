@@ -625,3 +625,12 @@ function DNAStrand(dna){
   }
   return dnaArr.join('')
 }
+
+// Thinkful - String Drills: Repeater 
+function repeater(string, n){
+  let str = ''
+  for ( let i = 0; i < n; i++) {
+    str += string
+  }
+  return str
+}
