@@ -656,3 +656,10 @@ function maskify(cc) {
     return cc
   }
 }
+
+// All Star Code Challenge #22 
+function toTime(seconds) {
+  let hours = Math.floor(seconds / 3600)
+  let mins = Math.floor( (seconds % 3600) / 60)
+  return `${hours} hour(s) and ${mins} minute(s)`
+}
