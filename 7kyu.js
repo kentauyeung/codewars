@@ -663,3 +663,10 @@ function toTime(seconds) {
   let mins = Math.floor( (seconds % 3600) / 60)
   return `${hours} hour(s) and ${mins} minute(s)`
 }
+
+// The Office III - Broken Photocopier
+function broken(x){
+  let pairs = { '1' : '0',
+                '0' : '1'}
+  return x.split('').map(x => pairs[x]).join('')
+}
