@@ -709,3 +709,14 @@ var paintLetterboxes = function(start, end) {
 function flyBy(lamps, drone){
   return lamps.length <= drone.length ? 'o'.repeat(lamps.length) : 'o'.repeat(drone.length) + lamps.slice(drone.length - lamps.length)
 }
+
+// switcheroo 
+function switcheroo(x){
+  let pairs = {
+      'a' : 'b',
+      'b' : 'a',
+      'c' : 'c',
+  }
+  
+  return x.split('').map(x => pairs[x]).join('')
+ }
