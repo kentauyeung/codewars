@@ -720,3 +720,16 @@ function switcheroo(x){
   
   return x.split('').map(x => pairs[x]).join('')
  }
+
+//  Well of Ideas - Harder Version 
+function well(x){
+  let goodCount = 0
+  
+  x.forEach( x => x.forEach( x => {
+    if(x.toString().toLowerCase() === 'good') {
+      goodCount++
+    }
+  }))
+  
+  return goodCount <= 2 && goodCount >= 1 ? 'Publish!' : goodCount >= 3 ? 'I smell a series!' : 'Fail!'
+}
