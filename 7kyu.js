@@ -681,3 +681,26 @@ function disemvowel(str) {
 function digitize(n) {
   return n.toString().split('').map(x => Number(x))
 }
+
+// Letterbox Paint-Squad 
+var paintLetterboxes = function(start, end) {
+  let frequency = {
+    0: 0,
+    1: 0,
+    2: 0,
+    3: 0,
+    4: 0,
+    5: 0,
+    6: 0,
+    7: 0,
+    8: 0,
+    9: 0,
+  }
+  
+  for (let i = start; i <= end; i++ ) {
+    let numArr = String(i).split('').map(Number)
+    numArr.forEach( x => frequency[x]++ )
+  }
+  
+  return Object.values(frequency)
+}
