@@ -742,3 +742,9 @@ function hypotenuse(a, b){
 function leg(c, a){
   return Math.sqrt( Math.pow(c, 2) - Math.pow(a, 2) )
 }
+
+// All star code challenge #20 
+function addArrays(array1, array2) {
+  if( array1.length !== array2.length ) throw new Error()
+  return array1.map( (x, i) => array1[i] + array2[i] )
+} 
