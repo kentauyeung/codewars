@@ -758,3 +758,12 @@ function oddOrEven(array) {
 function filterLongWords(sentence, n) {
   return sentence.split(' ').filter( word => word.length > n)
 }
+
+// narcissistic numbers 
+function isNarcissistic(n){
+  let nLength = n.toString().length
+  let numTotal = n.toString()
+                  .split('')
+                  .reduce( (a, b) => a + Math.pow(b, nLength), 0)
+  return numTotal === n
+}
