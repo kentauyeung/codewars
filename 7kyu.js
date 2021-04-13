@@ -748,3 +748,8 @@ function addArrays(array1, array2) {
   if( array1.length !== array2.length ) throw new Error()
   return array1.map( (x, i) => array1[i] + array2[i] )
 } 
+
+// Odd or even? 
+function oddOrEven(array) {
+  return array.length === 0 ? 'even' : array.reduce( (a,c) => a + Math.abs(c, 0) ) % 2 === 0 ? 'even' : 'odd'
+}
