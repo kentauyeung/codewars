@@ -753,3 +753,8 @@ function addArrays(array1, array2) {
 function oddOrEven(array) {
   return array.length === 0 ? 'even' : array.reduce( (a,c) => a + Math.abs(c, 0) ) % 2 === 0 ? 'even' : 'odd'
 }
+
+// Filter long words 
+function filterLongWords(sentence, n) {
+  return sentence.split(' ').filter( word => word.length > n)
+}
