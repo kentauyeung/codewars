@@ -767,3 +767,25 @@ function isNarcissistic(n){
                   .reduce( (a, b) => a + Math.pow(b, nLength), 0)
   return numTotal === n
 }
+
+// Greatest common divisor 
+function mygcd(x,y){
+  let lowest = 0
+  let greatestCD = 1
+  
+  if (x < y) { 
+    lowest = x 
+  } else { 
+    lowest = y
+  }
+  
+  for ( let i = 1; i <= lowest; i++ ) {
+    if ( x % i === 0 && y % i === 0 ) {
+      if (i > greatestCD) {
+        greatestCD = i
+      }
+    }
+  }
+  
+  return greatestCD
+}
