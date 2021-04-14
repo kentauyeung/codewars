@@ -789,3 +789,8 @@ function mygcd(x,y){
   
   return greatestCD
 }
+
+// scholarstem: unit-6baby count! 
+function countName(anArr, name){
+  return anArr.filter( x => x === name).length
+};
