@@ -127,3 +127,25 @@ const partsSums = ls => {
   }
   return newArr
 }
+
+// Counting duplicates 
+function duplicateCount(text){
+  let obj = {}
+  let count = 0
+  
+  text.toLowerCase().split('').forEach( x => {
+    if( obj[x] === undefined ) {
+      obj[x] = 1
+    } else {
+      obj[x] ++ 
+    }
+  })
+  
+  for ( let key in obj ) {
+    if ( obj[key] >= 2 ) {
+      count ++
+    }
+  }
+  
+  return count
+}
