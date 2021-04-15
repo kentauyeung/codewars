@@ -149,3 +149,26 @@ function duplicateCount(text){
   
   return count
 }
+
+// Reverse or rotate 
+function revrot(str, sz) {
+  if ( str === "" || sz === 0 || str.length < sz ) {
+    return ""
+  }
+  
+  str = str.slice( 0, Math.floor( str.length / sz) * sz )
+  let chunks = str.length / sz
+  let newStr = ""
+  
+  for ( let i = 0; i < chunks; i ++ ) {
+    let chunk = str.slice( i * sz, (i + 1) * sz )
+    let chunkSum = chunk.split('').reduce( (s, n) => s + Math.pow(n, 3), 0 )
+    if ( chunkSum % 2 === 0 ) {
+      newStr += chunk.split('').reverse().join('')
+    } else {
+      newStr += chunk.slice(1) + chunk[0]
+    }
+  }
+  
+  return newStr
+}
