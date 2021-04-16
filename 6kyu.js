@@ -180,3 +180,27 @@ function createPhoneNumber(numbers){
   let lastFour = numbers.slice(6).join('')
   return `(${areaCode}) ${firstThree}-${lastFour}`
 }
+
+// Coding meetup #15 - higher-order functions series - find the odd names 
+let hasOddName = obj => {
+  let charCodeSum = 0
+  for ( let key in obj ) {
+    if ( key === 'firstName' ) {
+      let name = obj[key]
+      for ( let i = 0; i < name.length; i++ ) {
+        charCodeSum += name.charCodeAt(i)
+      }
+    }
+  }
+  return charCodeSum % 2 !== 0
+}
+
+let findOddNames = list => {
+  let oddNamesArr = []
+  list.forEach( obj => {
+    if(hasOddName(obj)) {
+      oddNamesArr.push(obj)
+    }
+  })
+  return oddNamesArr
+}
