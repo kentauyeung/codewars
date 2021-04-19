@@ -33,19 +33,19 @@ function lengthToZeros(num) {
 }
 
 function expandedForm(num) {
-  var result = [];
-  var numStr = num.toString();
+  var result = []
+  var numStr = num.toString()
 
   for (var i = 0; i < numStr.length; i += 1) {
     var n = numStr[i];
-    var zeros = lengthToZeros(num).slice(i);
+    var zeros = lengthToZeros(num).slice(i)
 
     if (n > 0) {
-      result.push(n + zeros);
+      result.push(n + zeros)
     }
   }
 
-  return result.join(' + ');
+  return result.join(' + ')
 }
 
 // Unique In Order
