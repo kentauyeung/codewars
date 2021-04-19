@@ -103,16 +103,16 @@ function solution(str){
 // Is a number prime?
 function isPrime(num) {
   if (num < 2) {
-    return false;
+    return false
   }
 
   for (var i = 2; i < num; i += 1) {
     if (num % i === 0) {
-      return false;
+      return false
     }
   }
 
-  return true;
+  return true
 }
 
 // Sums of Parts 
