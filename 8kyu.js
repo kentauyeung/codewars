@@ -14,7 +14,7 @@ let greet = () => {
 }
 
 // Reversed Strings
-function solution(str){
+let solution = str => {
   return str.split('').reverse().join('')
 }
 
