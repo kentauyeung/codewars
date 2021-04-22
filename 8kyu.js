@@ -341,7 +341,7 @@ function findLongest(str){
   return longestWord
 }
 
-The most asked question on CodeWars
+// The most asked question on CodeWars
 function detect(string){
   return string.slice(0,19).includes('Can someone explain')
 }
