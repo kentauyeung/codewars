@@ -204,3 +204,17 @@ let findOddNames = list => {
   })
   return oddNamesArr
 }
+
+let greaterThanNine = num => {
+  let numArr = []
+  if (num > 9) {
+    let numArr = num.toString().split('')
+    return numArr.reduce( (a, c) => a + Number(c), 0)
+  }
+}
+
+let twistedSum = num => {
+  let numArr = Array.from({length: num}, (_, i) => i + 1)
+  return numArr.map( x => greaterThanNine(x) || x)
+               .reduce( (a, c) => a + c, 0)
+}
