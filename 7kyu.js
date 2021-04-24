@@ -683,7 +683,7 @@ function digitize(n) {
 }
 
 // Letterbox Paint-Squad 
-var paintLetterboxes = function(start, end) {
+let paintLetterboxes = (start, end) => {
   let frequency = {
     0: 0,
     1: 0,
