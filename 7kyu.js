@@ -589,7 +589,7 @@ function heron(a, b, c) {
 }
 
 // Sum of Cubes 
-function sumCubes(n){
+let sumCubes = n =>{
   let nArr = []
   for ( let i = n ; i >= 1; i -- ) {
     nArr.push(i)
