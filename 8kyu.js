@@ -4,7 +4,7 @@ let booleanToString = b => {
 }
 
 // Is he gonna survive?
-function hero(bullets, dragons){
+let hero = (bullets, dragons) => {
   return bullets >= dragons * 2
 }
 
@@ -19,18 +19,18 @@ let solution = str => {
 }
 
 // My head is at the wrong end!
-function fixTheMeerkat(arr) {
+let fixTheMeerkat = arr => {
  return arr.reverse()
 }
 
 // Get the mean of an array
-function getAverage(marks){
+let getAverage = marks => {
   let total = marks.reduce((total, num) => total += num)
   return Math.floor(total / marks.length)
 }
 
 // Grasshopper - Basic Function Fixer
-function addFive(num) {
+let addFive = num => {
   return num +=5
 }
 
