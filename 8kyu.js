@@ -1,5 +1,5 @@
 // Convert a Boolean to a String
-function booleanToString(b){
+let booleanToString = b => {
   return b === true ? 'true' : 'false'
 }
 
