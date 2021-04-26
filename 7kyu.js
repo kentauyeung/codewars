@@ -800,3 +800,15 @@ function meeting(x){
   let full = x => x === 'X'
   return x.every(full) ? 'None available!' : x.indexOf('O')
 }
+
+// Moves in squared strings(1)  
+let vertMirror = str => {
+  return str.split('\n').map( x => x.split('').reverse().join('')).join('\n')
+}
+                                                
+let horMirror = str => {
+  return str.split('\n').reverse().join('\n')
+}
+let oper = (fct, s) => {
+  return fct(s)
+}
