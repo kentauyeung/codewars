@@ -446,3 +446,8 @@ function rentalCarCost(d) {
     return (d * 40) - 50
   }
 }
+
+// Alan Partridge II 
+function apple(x){
+  return Math.pow(x, 2) > 1000 ? "It's hotter than the sun!!" : "Help yourself to a honeycomb Yorkie for the glovebox."
+}
