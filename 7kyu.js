@@ -817,3 +817,11 @@ let oper = (fct, s) => {
 function countDevelopers(list) {
   return list.filter( x => x.continent === 'Europe' && x.language === 'JavaScript').length
 }
+
+// Harvest festival function plant(seed, water, fert, temp){
+  if( temp < 20 || temp > 30) {
+    return '-'.repeat(Math.pow(water, water)) + seed
+  } else {
+    return ('-'.repeat(water) + seed.repeat(fert)).repeat(water)
+  }
+}
