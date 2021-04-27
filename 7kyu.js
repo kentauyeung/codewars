@@ -819,6 +819,7 @@ function countDevelopers(list) {
 }
 
 // Harvest festival function plant(seed, water, fert, temp){
+let plant = (seed, water, fert, temp) => {
   if( temp < 20 || temp > 30) {
     return '-'.repeat(Math.pow(water, water)) + seed
   } else {
