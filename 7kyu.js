@@ -812,3 +812,8 @@ let horMirror = str => {
 let oper = (fct, s) => {
   return fct(s)
 }
+
+// Coding Meetup #1 - Higher-order functions series - count the number of javascript developers coming from Europe 
+function countDevelopers(list) {
+  return list.filter( x => x.continent === 'Europe' && x.language === 'JavaScript').length
+}
