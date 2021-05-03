@@ -826,3 +826,8 @@ let plant = (seed, water, fert, temp) => {
     return ('-'.repeat(water) + seed.repeat(fert)).repeat(water)
   }
 }
+
+// Cat and mouse - easy version 
+let catMouse = x => {
+  return x.length > 5? 'Escaped!' : 'Caught!'
+}
