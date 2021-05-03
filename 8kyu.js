@@ -437,7 +437,7 @@ let maps = x => {
 }
 
 // Transportation on vacation 
-function rentalCarCost(d) {
+let rentalCarCost = d => {
   if(d < 3){
     return d * 40
   } else if(d < 7) {
