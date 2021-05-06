@@ -422,7 +422,7 @@ function uefaEuro2016(teams, scores){
 }
 
 // MakeUpperCase 
-function makeUpperCase(str) {
+let makeUpperCase = str => {
   return str.toUpperCase()
 }
 
