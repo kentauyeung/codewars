@@ -392,7 +392,7 @@ function move (position, roll) {
 }
 
 // Miles per gallon to kilometers per liter 
-function converter (mpg) {
+let converter = mpg => {
   return Number((mpg * .3540060435382138).toFixed(2))
 }
 
