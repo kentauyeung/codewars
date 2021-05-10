@@ -791,7 +791,7 @@ function mygcd(x,y){
 }
 
 // scholarstem: unit-6baby count! 
-function countName(anArr, name){
+let countName = (anArr, name) => {
   return anArr.filter( x => x === name).length
 };
 
