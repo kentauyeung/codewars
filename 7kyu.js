@@ -769,7 +769,7 @@ function isNarcissistic(n){
 }
 
 // Greatest common divisor 
-function mygcd(x,y){
+let mygcd = (x,y) => {
   let lowest = 0
   let greatestCD = 1
   
