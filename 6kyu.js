@@ -151,7 +151,7 @@ function duplicateCount(text){
 }
 
 // Reverse or rotate 
-function revrot(str, sz) {
+let revrot = (str, sz) => {
   if ( str === "" || sz === 0 || str.length < sz ) {
     return ""
   }
