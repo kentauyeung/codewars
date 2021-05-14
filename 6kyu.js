@@ -129,7 +129,7 @@ const partsSums = ls => {
 }
 
 // Counting duplicates 
-function duplicateCount(text){
+let duplicateCount = text => {
   let obj = {}
   let count = 0
   
