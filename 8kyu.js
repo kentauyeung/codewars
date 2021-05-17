@@ -456,3 +456,9 @@ function apple(x){
 function greet(name){
   return `Hello, ${name} how are you doing today?`
 }
+
+// Abbreviate a Two Word Name 
+function abbrevName(name){
+  let nameArr = name.toUpperCase().split(' ')
+  return nameArr[0][0] + '.' + nameArr[1][0]
+}
