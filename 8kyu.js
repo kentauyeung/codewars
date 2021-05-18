@@ -462,3 +462,8 @@ function abbrevName(name){
   let nameArr = name.toUpperCase().split(' ')
   return nameArr[0][0] + '.' + nameArr[1][0]
 }
+
+// Remove First and Last Character
+function removeChar(str){
+  return str.slice(1, str.length-1)
+};
