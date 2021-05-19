@@ -467,3 +467,8 @@ function abbrevName(name){
 function removeChar(str){
   return str.slice(1, str.length-1)
 };
+
+// Template Strings 
+let TempleStrings = (obj, feature) => {
+  return `${obj} are ${feature}`;
+}
