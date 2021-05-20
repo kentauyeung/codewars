@@ -831,3 +831,14 @@ let plant = (seed, water, fert, temp) => {
 let catMouse = x => {
   return x.length > 5? 'Escaped!' : 'Caught!'
 }
+
+// Shorter Concat [reverse longer]
+let shorter_reverse_longer = (a,b) => {
+  let short = a
+  let long = b.split('').reverse().join('')
+  if(b.length <= a.length) {
+    short = b
+    long = a.split('').reverse().join('')
+  }
+  return `${short}${long}${short}`
+}
