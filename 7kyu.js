@@ -796,7 +796,7 @@ let countName = (anArr, name) => {
 };
 
 // The office iv - find a meeting room 
-function meeting(x){
+let meeting = (x) => {
   let full = x => x === 'X'
   return x.every(full) ? 'None available!' : x.indexOf('O')
 }
