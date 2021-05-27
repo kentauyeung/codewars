@@ -760,7 +760,7 @@ function filterLongWords(sentence, n) {
 }
 
 // narcissistic numbers 
-function isNarcissistic(n){
+let isNarcissistic = n => {
   let nLength = n.toString().length
   let numTotal = n.toString()
                   .split('')
