@@ -755,7 +755,7 @@ function oddOrEven(array) {
 }
 
 // Filter long words 
-function filterLongWords(sentence, n) {
+let filterLongWords = (sentence, n) => {
   return sentence.split(' ').filter( word => word.length > n)
 }
 
