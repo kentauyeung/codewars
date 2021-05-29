@@ -472,3 +472,8 @@ function removeChar(str){
 let TempleStrings = (obj, feature) => {
   return `${obj} are ${feature}`;
 }
+
+// You only need one - Beginner
+function check(a,x){
+  return a.includes(x);
+}
