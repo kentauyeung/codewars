@@ -387,7 +387,7 @@ function lovefunc(flower1, flower2){
 }
 
 // Grasshopper - Terminal game move function 
-function move (position, roll) {
+let move  = (position, roll)  => {
   return position + (2 * roll)
 }
 
