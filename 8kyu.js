@@ -377,7 +377,7 @@ function boolToWord( bool ){
 }
 
 // Beginner Series #4 Cockroach
-function cockroachSpeed(s) {
+let cockroachSpeed = s => {
   return Math.floor(s * 27.7778)
 }
 
