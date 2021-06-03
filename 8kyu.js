@@ -372,7 +372,7 @@ function doubleInteger(i) {
 }
 
 // Convert boolean values to strings 'Yes' or "No"
-function boolToWord( bool ){
+let boolToWord =  bool => {
   return bool ? "Yes" : "No"
 }
 
