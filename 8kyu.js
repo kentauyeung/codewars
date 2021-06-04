@@ -477,3 +477,16 @@ let TempleStrings = (obj, feature) => {
 function check(a,x){
   return a.includes(x);
 }
+
+function fakeBin(x){
+  let result = ''
+  x.split('').forEach( n => {
+    if(Number(n) < 5) {
+      result += '0'
+    } else {
+      result += '1'
+    }
+  })
+  
+  return result
+}
