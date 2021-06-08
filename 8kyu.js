@@ -478,7 +478,7 @@ function check(a,x){
   return a.includes(x);
 }
 
-function fakeBin(x){
+let fakeBin = x => {
   let result = ''
   x.split('').forEach( n => {
     if(Number(n) < 5) {
