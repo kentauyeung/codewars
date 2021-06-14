@@ -474,7 +474,7 @@ let TempleStrings = (obj, feature) => {
 }
 
 // You only need one - Beginner
-function check(a,x){
+let check = (a,x) => {
   return a.includes(x);
 }
 
