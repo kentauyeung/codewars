@@ -490,3 +490,7 @@ let fakeBin = x => {
   
   return result
 }
+
+function sumStr(a,b) { 
+  return (Number(a) + Number(b)).toString()
+}
