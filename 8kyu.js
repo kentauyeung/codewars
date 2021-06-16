@@ -494,3 +494,28 @@ let fakeBin = x => {
 function sumStr(a,b) { 
   return (Number(a) + Number(b)).toString()
 }
+
+function checkAlive (health) {
+  return health > 0
+}
+
+function updateLight(current) {
+  return current === 'yellow' ? 'red' : current === 'green' ? 'yellow' : 'green'
+}
+
+function removeExclamationMarks(s) {
+  let removed = s.split('').filter( x => x !== '!')
+  return removed.join('');
+}
+
+function getRealFloor(n) {
+  return n < 13 && n > 0 ? n - 1 : n > 13 ? n - 2 : n
+}
+
+function powersOfTwo(n){
+  let result = [1]
+  for (let i = 1; i <= n; i++ ) {
+    result.push(Math.pow(2, i))
+  }
+  return result
+}
