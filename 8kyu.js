@@ -519,3 +519,32 @@ function powersOfTwo(n){
   }
   return result
 }
+
+var humanYearsCatYearsDogYears = function(humanYears) {
+  return [humanYears, catYears(humanYears), dogYears(humanYears)];
+}
+
+let catYears = num => {
+  return num === 1 ? 15 : num === 2 ? 24 : 24 + ((num - 2) * 4)
+}
+  
+let dogYears = num => {
+  return num === 1 ? 15 : num === 2 ? 24 : 24 + ((num - 2) * 5)
+}
+
+function firstNonConsecutive (arr) {
+  let counter = arr[0]
+  for(let i = 0; i < arr.length; i ++) {
+    if (arr[i] !== counter) {
+      return arr[i]
+    } else {
+      counter++
+    }
+  }
+  
+  return null
+}
+
+function litres(time) {
+  return Math.floor(time * 0.5);
+}
