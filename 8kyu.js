@@ -552,3 +552,7 @@ function litres(time) {
 function howManyLightsabersDoYouOwn(name) {
   return name === "Zach" ? 18 : 0
 }
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return mpg * fuelLeft >= distanceToPump
+};
