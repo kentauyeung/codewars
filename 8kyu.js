@@ -556,3 +556,7 @@ function howManyLightsabersDoYouOwn(name) {
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   return mpg * fuelLeft >= distanceToPump
 };
+
+function take(arr, n) {
+  return arr.slice(0, n);
+}
