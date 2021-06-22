@@ -560,3 +560,7 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 function take(arr, n) {
   return arr.slice(0, n);
 }
+
+function spEng(sentence){
+  return sentence.toLowerCase().includes('english')
+}
