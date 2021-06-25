@@ -568,3 +568,7 @@ function spEng(sentence){
 function find_average(array) {
   return array.reduce( (a, c) => a + c, 0) / array.length;
 }
+
+function hoopCount (n) {
+  return n >= 10 ? 'Great, now move on to tricks' : 'Keep at it until you get it'    
+}
