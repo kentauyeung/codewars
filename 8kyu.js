@@ -572,3 +572,7 @@ function find_average(array) {
 function hoopCount (n) {
   return n >= 10 ? 'Great, now move on to tricks' : 'Keep at it until you get it'    
 }
+
+function enough(cap, on, wait) {
+  return cap - on > wait ? 0 : Math.abs(cap - on - wait)
+}
