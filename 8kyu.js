@@ -576,3 +576,19 @@ function hoopCount (n) {
 function enough(cap, on, wait) {
   return cap - on > wait ? 0 : Math.abs(cap - on - wait)
 }
+
+function peopleWithAgeDrink(old) {
+  return old < 14 ? 'drink toddy' : old < 18 ? 'drink coke' : old < 21 ? 'drink beer' : 'drink whisky'
+};
+
+function dutyFree(normPrice, discount, hol){
+  return Math.floor( hol / (normPrice * (discount * 0.01)) )
+}
+
+function preFizz(n) {
+  let result = []
+  for (let i = 1; i <= n; i++) {
+    result.push(i)
+  }
+  return result
+}
